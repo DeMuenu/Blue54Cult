@@ -56,7 +56,7 @@
     </style>
   </head>
   <body class="min-h-screen text-white" style="background: var(--bg)">
-    <main class="relative min-h-screen overflow-hidden">
+    <main class="relative min-h-screen">
       <!-- Summoning circle background -->
       <div aria-hidden="true" class="absolute inset-0 overflow-hidden pointer-events-none">
         <svg class="absolute -top-32 -left-32 w-[700px] h-[700px] opacity-30 animate-spin-slow" viewBox="0 0 100 100">
@@ -109,9 +109,9 @@
               Summoning Division: <span class="text-fuchsia-400">Blue54</span>
             </h2>
             <p class="text-white/80 max-w-prose">
-              Greetings, Initiates. Our most sacred (and very silly) objective: upgrade
+              Greetings, Initiates. Convert him!
               <span class="font-semibold">Blue53</span> to <span class="font-semibold">Blue54</span>.
-              No refunds, only vibes. All rituals strictly for comedic purposes. 🫡
+              We stand strong for our future leader.
             </p>
             <div class="flex flex-wrap items-center gap-4">
               <button id="startBtn" class="group inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-gradient-to-br from-fuchsia-600 to-pink-500 shadow-lg shadow-fuchsia-500/30 hover:shadow-pink-500/30 transition">
@@ -126,7 +126,7 @@
             <p class="text-sm text-white/60" id="motto">Motto: Loading…</p>
           </div>
           <div class="relative">
-            <img id="heroImg" src="https://images.unsplash.com/photo-1542759564-1c35fe2200be?auto=format&fit=crop&w=1800&q=80" alt="Dramatic crimson smoke over dark marble" class="w-full h-[380px] object-cover rounded-3xl shadow-2xl ring-1 ring-white/10" />
+            <img id="heroImg" src="pictures/1.png" alt="Blue" class="w-full h-[380px] object-cover rounded-3xl shadow-2xl ring-1 ring-white/10" />
             <div class="absolute -bottom-5 left-5 backdrop-blur-sm bg-black/30 border border-white/10 rounded-2xl p-4 flex items-center gap-4">
               <!-- ProgressRing (SVG) -->
               <svg viewBox="0 0 140 140" class="w-28 h-28">
@@ -228,11 +228,11 @@
     <script>
       // --- Motto rotation ---
       const mottos = [
-        "Lo-fi arcana beats to study to",
-        "By the power of the upgrade wizard",
+        "Convert him!",
+        "By the power of the Blue!",
         "Blue53 → Blue54, arise!",
-        "This is definitely not a pyramid scheme",
-        "BRB, converting firmware…",
+        "54, 54, 54!",
+        "Converting...",
       ];
       const mottoEl = document.getElementById('motto');
       let mottoIdx = 0;
@@ -265,7 +265,7 @@
       // --- Copy invite ---
       const copyBtn = document.getElementById('copyBtn');
       copyBtn.addEventListener('click', async () => {
-        const text = '🜂 URGENT: Convert Blue53 → Blue54. Report to the Summoning Lobby. Dress code: dramatic. #TeamBlue54';
+        const text = 'https://vrchat.com/home/group/grp_1ef648c6-fdc4-43e1-9da0-2059e5a8e4b5';
         try { await navigator.clipboard.writeText(text); alert('Invite copied! Paste it wherever.'); }
         catch(e){
           const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
@@ -276,12 +276,12 @@
 
       // --- Gallery (cards + lightbox) ---
       const GALLERY = [
-        { src: 'https://images.unsplash.com/photo-1526312426976-593c73e2abfc?auto=format&fit=crop&w=1600&q=80', alt: 'Glowing neon circle over a misty floor' },
-        { src: 'https://images.unsplash.com/photo-1457131760772-7017c6180f05?auto=format&fit=crop&w=1600&q=80', alt: 'Candlelight on an old grimoire' },
-        { src: 'https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=1600&q=80', alt: 'Cluster of ritual candles' },
-        { src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80', alt: 'Shadowy corridor with arches' },
-        { src: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80', alt: 'Swirling smoke over dark ground' },
-        { src: 'https://images.unsplash.com/photo-1527489377706-5bf97e608852?auto=format&fit=crop&w=1600&q=80', alt: 'Misty doorway, faint glow' },
+        { src: '/pictures/1.png', alt: 'For Blue54' },
+        { src: '/pictures/2.png', alt: 'For Blue54' },
+        { src: '/pictures/3.png', alt: 'For Blue54' },
+        { src: '/pictures/4.png', alt: 'For Blue54' },
+        { src: '/pictures/5.png', alt: 'For Blue54' },
+        { src: '/pictures/6.png', alt: 'For Blue54' },
       ];
 
       const grid = document.getElementById('galleryGrid');
