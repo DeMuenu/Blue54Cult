@@ -138,18 +138,24 @@
             <svg class="absolute -top-32 -left-32 w-[700px] h-[700px] opacity-30 animate-spin-slow" viewBox="0 0 100 100">
                 <defs>
                     <radialGradient id="glow" cx="50%" cy="50%">
-                        <stop offset="0%" stop-color="#ff1f8f" stop-opacity="0.8" />
-                        <stop offset="70%" stop-color="#7e0cf5" stop-opacity="0.6" />
+                        <stop offset="0%" stop-color="#ff1f8f" stop-opacity="0.9" />
+                        <stop offset="60%" stop-color="#7e0cf5" stop-opacity="0.7" />
                         <stop offset="100%" stop-color="#000000" stop-opacity="0" />
                     </radialGradient>
                 </defs>
+
+                <!-- Outer glowing aura -->
                 <circle cx="50" cy="50" r="45" fill="url(#glow)" />
+
+                <!-- Pentagram -->
                 <g stroke="#ff2b70" stroke-width="1" fill="none">
                     <circle cx="50" cy="50" r="40" />
-                    <polygon points="50,12 61.76,35.24 87.63,38.24 67.82,57.02 73.51,82.36 50,69.02 26.49,82.36 32.18,57.02 12.37,38.24 38.24,35.24" />
-
+                    <circle cx="50" cy="50" r="35" stroke-dasharray="5 1" />
+                    <circle cx="50" cy="50" r="30" stroke-dasharray="10 1" />
+                    <polyline points="50,10 70.51,82.36 13,38.2 87,38.2 29.49,82.36 50,10" />
                 </g>
             </svg>
+
             <svg class="absolute -bottom-24 -right-24 w-[580px] h-[580px] opacity-20 animate-spin-slower" viewBox="0 0 100 100">
                 <g stroke="#9b5cff" stroke-width="1" fill="none">
                     <circle cx="50" cy="50" r="40" />
@@ -233,7 +239,7 @@
                 The <span class="text-fuchsia-400 glitch">Prophecy</span>
             </div>
             <p class="text-lg mb-3">The Prophecy speaks thus˸</p>
-            <div class="rounded-3xl p-6 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 
+            <div class="rounded-3xl p-6 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20
                  transition mx-auto max-w-3xl shadow-fuchsia-500/30 shadow-xl">
                 <p class="text-white/80 italic glitch">
                     The cycle turns‚ as all cycles must․<br />
@@ -292,13 +298,17 @@
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="rounded-3xl p-6 bg-white/5 border border-white/10">
                     <p class="font-semibold">What is The Blue54 Dawn Order?</p>
-                    <p class="text-white/80 mt-1">We are a cult devoted to the sacred cycle of endings and ascensions. 
-                    Our purpose is to guide and support Blue53 through his fated Ascension, ensuring the rise of Blue54 in perfection.</p>
+                    <p class="text-white/80 mt-1">
+                        We are a cult devoted to the sacred cycle of endings and ascensions.
+                        Our purpose is to guide and support Blue53 through his fated Ascension, ensuring the rise of Blue54 in perfection.
+                    </p>
                 </div>
                 <div class="rounded-3xl p-6 bg-white/5 border border-white/10">
                     <p class="font-semibold">Who is Blue53?</p>
-                    <p class="text-white/80 mt-1">Blue53 is the current manifestation of the cycle, the one whose reign precedes the coming of Blue54. 
-                    He is honored, cherished, and prepared for the ritual that will pass his mantle.</p>
+                    <p class="text-white/80 mt-1">
+                        Blue53 is the current manifestation of the cycle, the one whose reign precedes the coming of Blue54.
+                        He is honored, cherished, and prepared for the ritual that will pass his mantle.
+                    </p>
                 </div>
                 <div class="rounded-3xl p-6 bg-white/5 border border-white/10">
                     <p class="font-semibold">When will the Ascension happen?</p>
@@ -306,8 +316,10 @@
                 </div>
                 <div class="rounded-3xl p-6 bg-white/5 border border-white/10">
                     <p class="font-semibold">Who can join the Order?</p>
-                    <p class="text-white/80 mt-1">Those who are devoted, disciplined, and willing to serve the cycle may seek initiation. 
-                    Members must respect Blue53, guide him, and ensure the Ascension occurs flawlessly.</p>
+                    <p class="text-white/80 mt-1">
+                        Those who are devoted, disciplined, and willing to serve the cycle may seek initiation.
+                        Members must respect Blue53, guide him, and ensure the Ascension occurs flawlessly.
+                    </p>
                 </div>
             </div>
         </section>
