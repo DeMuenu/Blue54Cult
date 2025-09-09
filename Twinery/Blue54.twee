@@ -1,0 +1,45 @@
+:: StoryTitle
+Blue54
+
+
+:: StoryData
+{
+  "ifid": "C6108880-5E90-4A9D-89B0-AB6DE47F8E9C",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Welcome",
+  "zoom": 1
+}
+
+
+:: Be gone {"position":"1100,500","size":"100,100"}
+Be gone from this realm!
+
+
+:: Hes here {"position":"1450,200","size":"100,100"}
+Surround him, and speak to him about his greatness when he becomes the chosen one. 
+
+Make him want to be the chosen one...
+
+Group up:
+https://vrchat.com/home/group/grp_1ef648c6-fdc4-43e1-9da0-2059e5a8e4b5
+
+
+
+:: How {"position":"1275,225","size":"100,100"}
+Exercise the sacred ritual in the strange place. Recruit people to our cause.
+
+(t8n-depart:"flicker")+(t8n-arrive:"flicker")+(t8n-time:1s)[[He's here->Hes here]]
+
+
+:: Welcome {"position":"900,350","size":"100,100"}
+Are you ready to dedicate yourself to the rising of Blue?
+(t8n-depart:"flicker")+(t8n-arrive:"flicker")+(t8n-time:6s)[[Yes, I am->Yes]]
+
+(t8n-depart:"flicker")+(t8n-arrive:"flicker")+(t8n-time:3s)[[No->Be gone]]
+
+
+:: Yes {"position":"1100,250","size":"100,100"}
+Welcome traveller, you shall from now on convince him to become Blue54
+
+(t8n-depart:"flicker")+(t8n-arrive:"flicker")+(t8n-time:1s)[[But how?->How]]
