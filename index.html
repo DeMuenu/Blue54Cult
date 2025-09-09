@@ -194,9 +194,11 @@
                                 <span aria-hidden="true">→</span>
                             </a>
                         </button>
-                        <button id="copyBtn" class="inline-flex items-center gap-2 px-4 py-3 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/10">
-                            <span aria-hidden="true">📋</span> Copy Invite
-                        </button>
+                        <a href="https://vrchat.com/home/group/grp_1ef648c6-fdc4-43e1-9da0-2059e5a8e4b5"
+                           target="_blank" rel="noopener"
+                           class="inline-flex items-center gap-2 px-4 py-3 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/10">
+                            <span aria-hidden="true">🔗</span> VRC Cult Page
+                        </a>
                     </div>
                     <p class="text-sm text-white/60" id="motto"></p>
                 </div>
@@ -364,18 +366,6 @@
                 p += 0.1; progress = p; drawProgress(progress);
                 if (p >= 54) { clearInterval(id); setTimeout(() => heroImg.classList.remove('glitch-img'), 400); }
             }, 30);
-        });
-
-        // --- Copy invite ---
-        const copyBtn = document.getElementById('copyBtn');
-        copyBtn.addEventListener('click', async () => {
-            const text = 'https://vrchat.com/home/group/grp_1ef648c6-fdc4-43e1-9da0-2059e5a8e4b5';
-            try { await navigator.clipboard.writeText(text); alert('Invite copied! Paste it wherever.'); }
-            catch (e) {
-                const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
-                try { document.execCommand('copy'); alert('Invite copied!'); } catch (e) { alert('Copy failed. Here it is to copy manually:\n' + text); }
-                document.body.removeChild(ta);
-            }
         });
 
         // --- Gallery (cards + lightbox) ---
