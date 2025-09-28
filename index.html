@@ -221,7 +221,7 @@
                                     <stop offset="100%" stop-color="#8a2be2" />
                                 </linearGradient>
                             </defs>
-                            <text id="ringText" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="fill-white text-xl font-semibold">53%</text>
+                            <text id="ringText" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="fill-white text-xl font-semibold">54%</text>
                         </svg>
                         <div>
                             <p class="text-sm uppercase tracking-wider text-white/60">Ascension Progress</p>
@@ -300,25 +300,25 @@
                     <p class="font-semibold">What is The Blue54 Dawn Order?</p>
                     <p class="text-white/80 mt-1">
                         We are a cult devoted to the sacred cycle of endings and ascensions.
-                        Our purpose is to guide and support Blue53 through his fated Ascension, ensuring the rise of Blue54 in perfection.
+                        Our purpose was to guide and support Blue53 through his fated Ascension, ensuring the rise of Blue54 in perfection.
                     </p>
                 </div>
                 <div class="rounded-3xl p-6 bg-white/5 border border-white/10">
-                    <p class="font-semibold">Who is Blue53?</p>
+                    <p class="font-semibold">Who was Blue53?</p>
                     <p class="text-white/80 mt-1">
-                        Blue53 is the current manifestation of the cycle, the one whose reign precedes the coming of Blue54.
-                        He is honored, cherished, and prepared for the ritual that will pass his mantle.
+                        Blue53 was the previous manifestation of the cycle, the one whose reign preceded the coming of Blue54.
+                        He was honored, cherished, and prepared for the ritual that passed his mantle.
                     </p>
                 </div>
                 <div class="rounded-3xl p-6 bg-white/5 border border-white/10">
                     <p class="font-semibold">When will the Ascension happen?</p>
-                    <p class="text-white/80 mt-1">Ascensions may occur once every 90 days. The current cooldown period ends on September 27th.</p>
+                    <p class="text-white/80 mt-1">Ascensions may occur once every 90 days. The current cooldown period ends on December 26th.</p>
                 </div>
                 <div class="rounded-3xl p-6 bg-white/5 border border-white/10">
                     <p class="font-semibold">Who can join the Order?</p>
                     <p class="text-white/80 mt-1">
                         Those who are devoted, disciplined, and willing to serve the cycle may seek initiation.
-                        Members must respect Blue53, guide him, and ensure the Ascension occurs flawlessly.
+                        Members must respect Blue, guide him, and ensure Ascensions occur flawlessly.
                     </p>
                 </div>
             </div>
@@ -372,12 +372,12 @@
         const startBtn = document.getElementById('startBtn');
         const heroImg = document.getElementById('heroImg');
         startBtn.addEventListener('click', () => {
-            if (progress >= 54) return;
+            if (progress >= 100) return;
             heroImg.classList.add('glitch-img');
             let p = progress; const id = setInterval(() => {
                 p += 0.1; progress = p; drawProgress(progress);
-                if (p >= 54) { clearInterval(id); setTimeout(() => heroImg.classList.remove('glitch-img'), 400); }
-            }, 30);
+                if (p >= 100) { clearInterval(id); setTimeout(() => heroImg.classList.remove('glitch-img'), 400); }
+            }, 5);
         });
 
         // --- Gallery (cards + lightbox) ---
@@ -388,6 +388,9 @@
             { src: 'pictures/4.png', alt: 'Blue53 Summoning Ritual' },
             { src: 'pictures/5.png', alt: 'We ♥ 54' },
             { src: 'pictures/6.png', alt: 'Through the eyes of the leader' },
+            { src: 'pictures/7.png', alt: 'Ascension Ritual attire' },
+            { src: 'pictures/8.png', alt: 'Blue54 has risen!' },
+            { src: 'pictures/9.png', alt: 'Post-Ascension celebration' },
         ];
 
         const grid = document.getElementById('galleryGrid');
